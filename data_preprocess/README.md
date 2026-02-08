@@ -4,7 +4,8 @@
 apt-get install colmap
 
 # install some python package
-pip install colorama plyfile open3d kornia tqdm imageio imageio[ffmpeg] opencv-python
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install colorama plyfile open3d kornia tqdm imageio imageio[ffmpeg] opencv-python easydict huggingface_hub transformers==4.41.2 pycocotools timm yapf
 
 # other you need install GroudingDino and SAM
 wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth && mv sam_vit_h_4b8939.pth resources/models/

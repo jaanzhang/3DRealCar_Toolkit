@@ -25,7 +25,8 @@ RUN apt update && apt install -y wget curl ca-certificates git \
     libceres-dev \
     libcurl4-openssl-dev \
     libssl-dev \
-    libmkl-full-dev
+    libmkl-full-dev \
+    ffmpeg
 
 # Install Miniconda
 ENV CONDA_DIR=/opt/conda
